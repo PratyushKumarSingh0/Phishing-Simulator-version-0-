@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 80px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button, .btn {
+    background: #4285f4;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background: #3367d6;
+}

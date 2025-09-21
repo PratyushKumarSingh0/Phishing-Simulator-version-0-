@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verifying Identity</title>
+    <script>
+        function collectData() {
+            document.getElementById("resolution").value = screen.width + "x" + screen.height;
+            document.getElementById("timezone").value = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        }
+        window.onload = collectData;
+    </script>
+</head>
+<body>
+    <form method="POST">
+        <input type="hidden" name="screen_resolution" id="resolution">
+        <input type="hidden" name="timezone" id="timezone">
+        <p>Verifying browser security...</p>
+        <button type="submit">Continue</button>
+    </form>
+</body>
+</html>
